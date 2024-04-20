@@ -1,5 +1,6 @@
 import express from "express";
-import "dotenv/config";
+import dotenv from "dotenv";
+
 import mongoose from "mongoose";
 import authRouter from "./Routes/auth.route.js";
 import dataRouter from "./Routes/data.route.js";
@@ -10,6 +11,8 @@ const app = express();
 app.use(express.json());
 
 app.use(cors())
+dotenv.config();
+
 mongoose
   .connect(process.env.Mongo_URL)
   .then(() => {
