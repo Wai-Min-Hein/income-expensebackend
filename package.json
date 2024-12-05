@@ -15,11 +15,11 @@
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
-    "express": "^4.19.2",
+    "express": "^4.21.1",
     "income-and-expense": "file:",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.5.0",
-    "mongoose": "^8.3.1",
+    "mongoose": "^8.8.3",
     "nodemon": "^3.1.0"
   }
 }
