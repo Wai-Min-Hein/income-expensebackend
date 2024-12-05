@@ -2,11 +2,11 @@
   "name": "income-and-expense",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "api/index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js"
+    "dev": "nodemon api/index.js",
+    "start": "node api/index.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "income-and-expense": "file:",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.5.0",
     "mongoose": "^8.3.1",
