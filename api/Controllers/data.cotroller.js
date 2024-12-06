@@ -20,7 +20,8 @@ export const post = async (req, res, next) => {
 
 export const dispatch = async (req, res, next) => {
   try {
-    const {id} = await req.body;
+    
+    const id = req.params.id; 
    const deletedData= await Datas.findByIdAndDelete(id)
 
   console.log(id,deletedData);

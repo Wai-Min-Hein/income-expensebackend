@@ -5,6 +5,6 @@ const router = express.Router()
 
 router.get('/', get)
 router.post('/', post)
-router.post('/delete', dispatch)
+router.post('/delete/:id', dispatch)
 
 export default router
