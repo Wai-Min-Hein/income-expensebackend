@@ -10,7 +10,10 @@ export const signUp = async (req, res, next) => {
     //check if user exist
     const user = await User.findOne({ email });
 
-    if (user) next(errorHandler(401, "User have already existed"));
+    if (user)
+          {
+            return next(errorHandler(401, "User have already existed"));
+          }
 
     const hashPassword = bcrypt.hashSync(password, 10);
 
